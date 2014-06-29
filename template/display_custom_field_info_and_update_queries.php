@@ -9,9 +9,13 @@
 		</style>
 	</head>
 	<body>
+		<p>
+			<a href="#queries">Jump to generated MySQL queries</a>
+		</p>
 <?php
 
-	global $DB;
+	global $DB;
+
 
 	$update_queries = array();
 	$ee_sites = array();
@@ -110,20 +114,27 @@ AND field_id_". $field_id . " NOT LIKE '{filedir_%';";
 <th>class</th>
 <th>ff_settings</th>
 </tr>";
-
+
+
 // Fetch primary list of fields
 	$query = $DB->query("SELECT g.site_id, g.group_name, f.field_name, f.field_id, f.field_type, ft.class, f.ff_settings
 FROM `exp_field_groups` AS g
 INNER JOIN `exp_weblog_fields` as f
   ON g.group_id = f.group_id
 LEFT JOIN `exp_ff_fieldtypes` as ft
-  ON f.field_type = CONCAT('ftype_id_', CAST(ft.fieldtype_id AS CHAR))");
-
-	if ($query->num_rows > 0)
-	{
+  ON f.field_type = CONCAT('ftype_id_', CAST(ft.fieldtype_id AS CHAR))");
+
+
+
+	if ($query->num_rows > 0)
+
+	{
+
 		// Display each field row
-		foreach($query->result as $row)
-		{
+		foreach($query->result as $row)
+
+		{
+
 			echo "<tr>";
 			echo "<td>" . $ee_sites[$row['site_id']] . " (ID: " . $row['site_id'] . ")</td>";
 			echo "<td>" . $row['group_name'] . "</td>";
@@ -203,11 +214,12 @@ LEFT JOIN `exp_ff_fieldtypes` as ft
 				echo "</table>";
 				echo "</td>";
 			}
-		}
+		}
+
 	}
 	echo "</table>";
 
-	echo "<hr><textarea rows='20' cols='60' readonly>";
+	echo "<hr><a name='queries'></a><textarea rows='20' cols='60' readonly>";
 	foreach ($update_queries as $key => $value) {
 		echo $value . "
 ";
