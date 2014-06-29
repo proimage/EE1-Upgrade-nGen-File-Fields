@@ -11,9 +11,13 @@ To use:
 2. Enable PHP on output.
 3. View the template in a browser.
 
-You will be shown a table with all the custom fields from your EE1 install (across all MSM sites as well). For each nGen File field, whether standalone or as a Matrix column, detailed information with be displayed regarding the Upload Destination selected for that field.
+You will be shown a table with all the custom fields from your EE1 install (across all MSM sites as well). For each nGen File field, whether standalone or as a Matrix column, detailed information with be displayed regarding the Upload Destination selected for that field:
+
+![Overview of Custom Fields](docs/img/ee1-ngen-upgrade-field-overview.jpg)
 
 The MySQL query to update that field's data to the format required by the native EE2 File field is also displayed. All such queries are displayed together below the table, to make it easy to run them all at once AFTER YOU'VE UPGRADED TO EE2.
+
+![MySQL queries for upgrading nGen fields](docs/img/ee1-ngen-upgrade-queries.jpg)
 
 ### IMPORTANT: Save this template's output (what you see in the browser) BEFORE beginning the EE1->EE2 upgrade process. It must be run under EE1, before switching the nGgen File fields over to plain text fields.
 
