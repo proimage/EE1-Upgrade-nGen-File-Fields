@@ -8,7 +8,7 @@ ExpressionEngine 1.x template code. Displays overview of all custom fields and t
 To use:
 
 1. Paste the code from the included .PHP file (found under /template/) into an EE1 template.
-2. Enable PHP on output.
+2. Enable PHP for the template (input or output).
 3. View the template in a browser.
 
 You will be shown a table with all the custom fields from your EE1 install (across all MSM sites as well). For each nGen File field, whether standalone or as a Matrix column, detailed information with be displayed regarding the Upload Destination selected for that field:
