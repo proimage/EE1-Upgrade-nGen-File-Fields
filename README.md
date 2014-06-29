@@ -15,7 +15,7 @@ You will be shown a table with all the custom fields from your EE1 install (acro
 
 ![Overview of Custom Fields](docs/img/ee1-ngen-upgrade-field-overview.jpg)
 
-The MySQL query to update that field's data to the format required by the native EE2 File field is also displayed. All such queries are displayed together below the table, to make it easy to run them all at once AFTER YOU'VE UPGRADED TO EE2.
+The MySQL query to update that field's data to the format required by the native EE2 File field is also displayed. All such queries are displayed together below the table, to make it easy to run them all at once (**after** you've upgraded to EE2):
 
 ![MySQL queries for upgrading nGen fields](docs/img/ee1-ngen-upgrade-queries.jpg)
 
