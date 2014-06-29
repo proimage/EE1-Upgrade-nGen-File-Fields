@@ -7,7 +7,7 @@ ExpressionEngine 1.x template code. Displays overview of all custom fields and t
 
 To use:
 
-1. Paste the code from the included .PHP file into an EE1 template.
+1. Paste the code from the included .PHP file (found under /template/) into an EE1 template.
 2. Enable PHP on output.
 3. View the template in a browser.
 
