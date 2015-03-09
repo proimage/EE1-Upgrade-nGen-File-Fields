@@ -9,6 +9,13 @@ ExpressionEngine 1.x template code. Displays overview of all custom fields and d
 
 **This template does NOT make any changes to your database. It only displays information about your EE1 site's custom fields that will aid you in the EE1->EE2 upgrade process.**
 
+Requirements:
+
+- EE 1.7.x (tested on 1.7.1; may work on earlier versions)
+- FieldFrame (1.4+)
+- nGen File Field (tested on 1.0.1 and 1.0.2)
+- (if applicable) Matrix 1.3.5 (the free version) - does NOT work with Matrix 1.5 (the commercial version).
+
 To use:
 
 1. Paste the code from the included .PHP file (found under /template/) into an EE1 template.
